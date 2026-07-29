@@ -1,0 +1,15 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.BiomedicalEngineeringSyntheticBiologyEngineeringCanonicalLaneLean.SyntheticBiologyAdmissibleClass
+import HautevilleHouse.BiomedicalEngineeringSyntheticBiologyEngineeringCanonicalLaneLean.SyntheticBiologyBridgeLemmas
+
+namespace HautevilleHouse
+namespace BiomedicalEngineeringSyntheticBiologyEngineeringCanonicalLaneLean
+
+def ConstrainedSyntheticBiologyClosure (A : SyntheticBiologyAdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem synthetic_biology_endgame (A : SyntheticBiologyAdmissibleClass) : ConstrainedSyntheticBiologyClosure A :=
+  And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end BiomedicalEngineeringSyntheticBiologyEngineeringCanonicalLaneLean
+end HautevilleHouse
